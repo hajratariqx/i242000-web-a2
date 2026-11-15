@@ -1,0 +1,30 @@
+/* Design tokens: colours, type, spacing. Change a value here and it updates everywhere. */
+:root {
+  --ivory: #f8f6f1;
+  --cream: #f3eee5;
+  --sand: #e6d9c8;
+  --sage: #a5aa96;
+  --taupe: #a99b8d;
+  --taupe-dark: #6b6055; /* darker taupe so small text is readable on ivory */
+  --charcoal: #292825;
+  --black: #171717;
+  --white: #ffffff;
+
+  --error: #9b2c2c;
+  --success: #3b5b3f;
+  --warning: #8a5a12;
+
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 72px;
+
+  --radius: 2px;
+  --line: 1px solid var(--sand);
+  --container: 1280px;
+}

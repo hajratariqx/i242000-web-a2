@@ -1,0 +1,126 @@
+/* ---------- Buttons and links ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: 13px 26px; border: 1px solid var(--black); border-radius: var(--radius); font-weight: 500; text-decoration: none; transition: background-color 0.2s, color 0.2s; min-height: 46px; }
+.btn--primary { background: var(--black); color: var(--white); }
+.btn--primary:hover:not(:disabled) { background: var(--charcoal); }
+.btn--secondary { background: transparent; color: var(--black); }
+.btn--secondary:hover:not(:disabled) { background: var(--sand); }
+.btn--block { display: flex; width: 100%; }
+.btn:disabled { opacity: 0.45; }
+.text-btn { background: none; border: 0; padding: var(--space-1) 0; text-decoration: underline; text-underline-offset: 4px; display: inline-flex; gap: var(--space-1); align-items: center; }
+.text-link { text-underline-offset: 5px; }
+.icon-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; background: none; border: 0; text-decoration: none; }
+.bag-count { position: absolute; top: 2px; right: 0; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--black); color: var(--white); font-size: 0.72rem; line-height: 18px; text-align: center; }
+
+/* ---------- Placeholders ---------- */
+.img-placeholder { display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; height: 100%; min-height: 100%; padding: var(--space-3); background: repeating-linear-gradient(135deg, var(--sand), var(--sand) 12px, var(--cream) 12px, var(--cream) 24px); color: var(--charcoal); font-size: 0.78rem; line-height: 1.4; overflow-wrap: anywhere; }
+.img-placeholder span { background: var(--ivory); padding: 6px 10px; }
+
+/* ---------- Product card ---------- */
+.product-card__media { position: relative; display: block; aspect-ratio: 4 / 5; background: var(--sand); overflow: hidden; }
+.product-card__media img, .product-card__media .img-placeholder { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.product-card:hover .product-card__media img { transform: scale(1.03); }
+.product-card__body { padding-top: var(--space-2); }
+.product-card__meta { color: var(--taupe-dark); font-size: 0.85rem; margin: 0 0 2px; }
+.product-card__name { font-size: 1.25rem; margin-bottom: var(--space-1); }
+.product-card__name a { text-decoration: none; }
+.product-card__name a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.badges { position: absolute; top: var(--space-2); left: var(--space-2); display: flex; gap: var(--space-1); flex-wrap: wrap; }
+.badge { background: var(--ivory); color: var(--black); padding: 2px 8px; font-size: 0.78rem; font-weight: 500; }
+.badge--sale { background: var(--black); color: var(--white); }
+.price { display: flex; gap: var(--space-2); align-items: baseline; margin: 0 0 var(--space-2); }
+.price__now { font-weight: 700; }
+.price__was { color: var(--taupe-dark); font-size: 0.9rem; }
+.size-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: var(--space-1); }
+.size-chips li { min-width: 30px; padding: 1px 6px; border: 1px solid var(--taupe); font-size: 0.78rem; text-align: center; }
+.size-chips li.is-out { color: var(--taupe-dark); border-color: var(--sand); text-decoration: line-through; }
+.stock-note { font-size: 0.85rem; font-weight: 500; margin: 0; }
+.stock-note--out { color: var(--error); }
+.stock-note--low { color: var(--warning); }
+.product-grid--compact .product-card__name { font-size: 1.05rem; }
+.product-grid--compact .size-chips li { min-width: 24px; font-size: 0.7rem; padding: 0 4px; }
+
+/* ---------- Toolbar controls ---------- */
+.searchbar { display: flex; align-items: center; gap: var(--space-2); border: 1px solid var(--taupe); background: var(--white); padding: 0 var(--space-3); }
+.searchbar input { flex: 1; min-width: 0; border: 0; background: none; padding: 12px 0; outline: none; }
+.searchbar:focus-within { outline: 2px solid var(--black); outline-offset: 2px; }
+.sort { display: flex; align-items: center; gap: var(--space-2); }
+.view-toggle { display: inline-flex; border: 1px solid var(--taupe); margin-left: auto; }
+.view-toggle button { background: none; border: 0; padding: 10px 12px; display: inline-flex; }
+.view-toggle button[aria-pressed='true'] { background: var(--black); color: var(--white); }
+
+/* ---------- Forms ---------- */
+.field { display: grid; gap: 6px; margin-bottom: var(--space-3); }
+.field label { font-weight: 500; }
+.field input, .field select, .field textarea, .sort select { width: 100%; padding: 12px 14px; border: 1px solid var(--taupe); background: var(--white); border-radius: var(--radius); }
+.sort select { width: auto; padding: 10px 12px; }
+.field--error input, .field--error select, .field--error textarea { border-color: var(--error); border-width: 2px; }
+.field__hint { color: var(--taupe-dark); font-size: 0.88rem; margin: 0; }
+.field__error { color: var(--error); font-size: 0.9rem; font-weight: 500; margin: 0; }
+.field__error::before { content: 'Error: '; }
+.choice { display: flex; align-items: center; gap: var(--space-2); padding: 4px 0; cursor: pointer; }
+.choice input { width: 18px; height: 18px; accent-color: var(--black); }
+.chip { padding: 8px 12px; min-width: 44px; background: var(--white); border: 1px solid var(--taupe); }
+.chip.is-selected { background: var(--black); border-color: var(--black); color: var(--white); }
+.size-filter { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+
+/* ---------- Size selector (radio buttons styled as chips) ---------- */
+.size-selector { border: 0; padding: 0; margin: var(--space-3) 0 var(--space-1); }
+.size-selector legend { font-weight: 700; padding: 0; margin-bottom: var(--space-2); }
+.size-selector__options { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.size-option { display: grid; justify-items: center; gap: 2px; }
+.size-option input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.size-option label { display: inline-flex; align-items: center; justify-content: center; min-width: 52px; min-height: 48px; padding: 0 14px; border: 1px solid var(--taupe); background: var(--white); cursor: pointer; }
+.size-option input:checked + label { background: var(--black); color: var(--white); border-color: var(--black); }
+.size-option input:disabled + label { color: var(--taupe-dark); background: var(--cream); border-color: var(--sand); text-decoration: line-through; cursor: not-allowed; }
+.size-option input:focus-visible + label { outline: 2px solid var(--black); outline-offset: 3px; }
+.size-option__note { font-size: 0.75rem; color: var(--taupe-dark); min-height: 1.2em; }
+
+/* ---------- Quantity ---------- */
+.qty { display: inline-flex; align-items: center; border: 1px solid var(--taupe); background: var(--white); }
+.qty__btn { width: 44px; height: 46px; display: inline-flex; align-items: center; justify-content: center; background: none; border: 0; }
+.qty__btn:disabled { opacity: 0.35; }
+.qty__value { min-width: 36px; text-align: center; font-weight: 500; }
+
+/* ---------- Gallery ---------- */
+.gallery { display: grid; gap: var(--space-2); }
+.gallery__main { aspect-ratio: 4 / 5; background: var(--sand); overflow: hidden; }
+.gallery__main img, .gallery__main .img-placeholder { width: 100%; height: 100%; object-fit: cover; }
+.gallery__thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-2); }
+.gallery__thumbs button { display: block; width: 100%; aspect-ratio: 4 / 5; padding: 0; border: 2px solid transparent; background: var(--sand); overflow: hidden; }
+.gallery__thumbs button.is-selected { border-color: var(--black); }
+.gallery__thumbs img, .gallery__thumbs .img-placeholder { width: 100%; height: 100%; object-fit: cover; font-size: 0.7rem; }
+
+/* ---------- Summary ---------- */
+.summary { background: var(--cream); padding: var(--space-4); }
+.summary h2 { font-size: 1.5rem; }
+.summary__items { display: grid; gap: var(--space-2); margin-bottom: var(--space-3); }
+.summary__items li { display: flex; justify-content: space-between; gap: var(--space-3); font-size: 0.95rem; }
+.summary__items li span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.summary__rows { display: grid; gap: var(--space-2); margin-bottom: var(--space-3); }
+.summary__rows div { display: flex; justify-content: space-between; gap: var(--space-3); }
+.summary__total { border-top: 1px solid var(--taupe); padding-top: var(--space-2); font-weight: 700; font-size: 1.15rem; }
+.summary__rule { font-size: 0.9rem; color: var(--taupe-dark); margin: 0; }
+
+/* ---------- Feedback, banners, states ---------- */
+.feedback { margin: 0; padding: var(--space-2) var(--space-3); font-weight: 500; }
+.feedback--success { background: #e6efe5; color: var(--success); }
+.feedback--error { background: #f6e3e1; color: var(--error); }
+.banner { padding: var(--space-3); margin: 0 0 var(--space-3); max-width: none; }
+.banner p { margin: 0 0 var(--space-2); }
+.banner--info { background: var(--cream); border-left: 4px solid var(--sage); }
+.banner--warning { background: #fbf3e4; border-left: 4px solid var(--warning); }
+.banner--error { background: #f6e3e1; border-left: 4px solid var(--error); color: var(--error); font-weight: 500; }
+.inline-alert { color: var(--warning); font-weight: 500; margin: 0 0 var(--space-2); }
+
+.state { display: grid; justify-items: center; gap: var(--space-2); text-align: center; padding: var(--space-6) var(--space-3); }
+.state h2 { margin-bottom: 0; }
+.state p { margin: 0 0 var(--space-2); }
+.state--error h2 { color: var(--error); }
+.spinner { width: 28px; height: 28px; border: 3px solid var(--sand); border-top-color: var(--black); border-radius: 50%; animation: spin 0.9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- Demo panel (only with ?demo=1) ---------- */
+.demo-panel { position: fixed; left: var(--space-2); bottom: var(--space-2); z-index: 60; max-width: calc(100vw - 16px); width: 300px; background: var(--white); border: 2px dashed var(--error); padding: var(--space-2) var(--space-3); max-height: 70vh; overflow-y: auto; }
+.demo-panel summary { cursor: pointer; font-weight: 700; color: var(--error); }
+.demo-panel__body { display: grid; gap: var(--space-2); padding-top: var(--space-2); }
+.demo-panel h3 { font-family: var(--font-body); font-size: 1rem; margin: var(--space-2) 0 0; }
