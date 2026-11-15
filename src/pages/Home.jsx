@@ -16,7 +16,7 @@ const HERO_IMAGE = '/images/hero/H1.jpg'
 
 const COLLECTION_CARDS = [
   { to: '/shop?collection=eastern-wear', title: "Women's eastern wear", image: '/images/collections/C1.jpg', label: "[COLLECTION IMAGE PLACEHOLDER — WOMEN'S EASTERN WEAR]" },
-  { to: '/shop?collection=mens-essentials', title: "Men's essentials", image: '/images/collections/C2.png', label: "[MEN'S COLLECTION IMAGE PLACEHOLDER]" },
+  { to: '/shop?collection=mens-essentials', title: "Men's essentials", image: '/images/collections/C2.jpg', label: "[MEN'S COLLECTION IMAGE PLACEHOLDER]" },
   { to: '/shop?collection=everyday-casuals', title: 'Everyday casuals', image: '/images/collections/C3.jpg', label: '[COLLECTION IMAGE PLACEHOLDER — EVERYDAY CASUALS]' },
   { to: '/shop?collection=festive-edit', title: 'Festive edit', image: '/images/collections/C4.jpg', label: '[COLLECTION IMAGE PLACEHOLDER — FESTIVE EDIT]' },
   { to: '/shop?new=1', title: 'New arrivals', image: '/images/collections/C5.jpg', label: '[COLLECTION IMAGE PLACEHOLDER — NEW ARRIVALS]' },

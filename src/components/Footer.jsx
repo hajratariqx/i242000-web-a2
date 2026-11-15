@@ -30,9 +30,9 @@ function Footer() {
         <div>
           <h2>Follow</h2>
           <ul>
-            <li>Instagram (placeholder)</li>
-            <li>Facebook (placeholder)</li>
-            <li>TikTok (placeholder)</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>TikTok</li>
           </ul>
         </div>
       </div>

@@ -24,12 +24,12 @@
 .header-search input { flex: 1; min-width: 0; padding: 12px 14px; border: 1px solid var(--taupe); background: var(--white); }
 
 @media (min-width: 900px) {
-  .nav-toggle { display: none; }
+  .site-header .nav-toggle { display: none; }
   .site-header__bar { display: grid; grid-template-columns: 1fr auto 1fr; }
   .wordmark { grid-column: 2; grid-row: 1; }
   .main-nav { display: block; position: static; border: 0; padding: 0; background: none; grid-column: 1; grid-row: 1; }
   .main-nav ul { flex-direction: row; gap: var(--space-4); }
-  .site-header__actions { grid-column: 3; justify-self: end; }
+  .site-header__actions { grid-column: 3; grid-row: 1; justify-self: end; }
 }
 
 /* ---------- Footer ---------- */
