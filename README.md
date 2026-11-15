@@ -4,8 +4,8 @@ A fictional contemporary Pakistani clothing label, built as **CS4032 Web Program
 
 - **Student:** `Hajra Tariq` | **Roll no:** `i24-2000` | **Section:** `CY-5A`
 - **GitHub:** `https://github.com/hajratariqx/i242000-web-a2/`
-- **Deployment:** `<VERCEL URL>`
-- **Final commit:** `<HASH>`
+- **Deployment:** `https://loom-and-lane.vercel.app`
+- **Final commit:** `0f37f872dd54a1c12863fac115b010c0dc067996`
 
 > This is an academic frontend simulation. Orders are not real, no payment is taken, and all products, prices and policies are invented.
 
